@@ -51,24 +51,50 @@ footer {
 .tile {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  position: relative;
+  /* border-radius: 5%; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
 }
+
 .tile img {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
 }
+
 .tile img:hover {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  /* filter: blur(3px); */
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.5);
+  transform: scale(1.2);
+  /* filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5)); */
+  transition: all 0.4s ease;
 }
 
 /* Hint: Notice the position:absolute and z-index properties. */
 /* Think about how those in relation to the existing "tile" classes. */
 .tile-text {
+  color: white;
   position: absolute;
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+/* #bengluru {
+  
+} */
 
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -82,11 +108,7 @@ footer {
   height: 50vh;
   background-position: center;
   background-size: cover;
-  color: white;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  /* text-align: center; */
+  background-repeat: no-repeat;
 }
 
 .hero-subheading {
