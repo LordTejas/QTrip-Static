@@ -51,6 +51,8 @@ footer {
 .tile {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  height: 100%;
+  width: 100%;
   position: relative;
   /* border-radius: 5%; */
 
@@ -58,6 +60,7 @@ footer {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  border-radius: 5%;
   overflow: hidden;
 }
 
@@ -66,20 +69,17 @@ footer {
   /* 1. Fill in the required properties. */
   height: 100%;
   width: 100%;
-  object-fit: cover;
-  position: relative;
+  /* object-fit: cover; */
+  transition: all 0.2s;
 }
 
 .tile img:hover {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
   /* filter: blur(3px); */
-  height: 100%;
-  width: 100%;
   filter: brightness(0.5);
-  transform: scale(1.2);
+  transform: scale(1.1);
   /* filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5)); */
-  transition: all 0.4s ease;
 }
 
 /* Hint: Notice the position:absolute and z-index properties. */
@@ -135,14 +135,25 @@ footer {
 .adventure-card {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
 }
+
 .adventure-card img {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  height: 16rem;
+  object-fit: cover;
+  transition: all 0.2s;
 }
+
 .adventure-card img:hover {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  filter: brightness(0.5);
+  /* transform: scale(1.1); */
 }
 
 /* ================================== */
